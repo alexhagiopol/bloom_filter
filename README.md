@@ -14,3 +14,5 @@ The Bloom Filter implementation was tested by writing a testing script that inst
 
 As predicted by theory, the false positive frequency drops precipitously with increasing ratio between the table size and the database size so long as the number of hash functions k remains equal to (n/m)ln(2). Randomness in the data causes a somewhat non-monotonic drop in false positive percentage.
 
+![Image Results Chart](https://github.com/alexhagiopol/BloomFilter/blob/master/results_chart.png)
+![Image Results Chart](https://github.com/alexhagiopol/BloomFilter/blob/master/results_table.png)
