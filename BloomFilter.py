@@ -13,7 +13,7 @@ class BloomFilter:
     def add(self,data):
         indices = []
         for i in range(0,self.k_):
-            h = hf.HashFunction(i,self.n_,self.seed_)
+            h = hf.HashFunction(self.n_,self.seed_)
             indices.append(h.getHashValue(data))
         for i in range(0, len(indices)):
             self.table_[indices[i]] = 1
@@ -21,7 +21,7 @@ class BloomFilter:
         isPresent = True
         indices = []
         for i in range(0,self.k_):
-            h = hf.HashFunction(i,self.n_,self.seed_)
+            h = hf.HashFunction(self.n_,self.seed_)
             indices.append(h.getHashValue(data))
         for i in range(0, len(indices)):
             if self.table_[indices[i]] != 1:
