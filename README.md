@@ -1,4 +1,4 @@
-# BloomFilter
+# Bloom Filter
 
 ### Implementation
 
